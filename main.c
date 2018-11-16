@@ -589,6 +589,8 @@ void main(void)
     }
   }
   
+  trace(TNOTE, "goodbye world\r\n");
+  
   traceclose();
   fclose(fp);
   
