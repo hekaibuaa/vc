@@ -569,6 +569,8 @@ void main(void)
   FifoInit(fifo, FifoBuf, sizeof(FifoBuf));
   memset(log, 0, sizeof(LogStruct));
 
+  trace(TNOTE, "hello world\r\n");
+  
   while (!feof(fp))
   {
     fread(buf, 1, 1, fp);
