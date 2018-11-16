@@ -1,0 +1,112 @@
+
+#ifndef __CONSTANTS_H__
+#define __CONSTANTS_H__
+
+#define BIT0 (1   )
+#define BIT1 (1<<1)
+#define BIT2 (1<<2)
+#define BIT3 (1<<3)
+#define BIT4 (1<<4)
+#define BIT5 (1<<5)
+#define BIT6 (1<<6)
+#define BIT7 (1<<7)
+
+#define PI          (3.1415926535897932)  /* pi */
+#define D2R         (PI/180.0)             /* deg to rad */
+#define R2D         (180.0/PI)             /* rad to deg */
+#define KNOT2M      (0.514444444)         /* m/knot */
+
+#define B2_N32 (2.32830644e-10f)
+#define B2_N31 (4.65661287e-10f)
+#define B2_N30 (9.31322575e-10f)
+#define B2_N29 (1.86264515e-09f)
+#define B2_N28 (3.72529030e-09f)
+#define B2_N27 (7.45058060e-09f)
+#define B2_N26 (1.49011612e-08f)
+#define B2_N25 (2.98023224e-08f)
+#define B2_N24 (5.96046448e-08f)
+#define B2_N23 (1.19209290e-07f)
+#define B2_N22 (2.38418579e-07f)
+#define B2_N21 (4.76837158e-07f)
+#define B2_N20 (9.53674316e-07f)
+#define B2_N19 (1.90734863e-06f)
+#define B2_N18 (3.81469727e-06f)
+#define B2_N17 (7.62939453e-06f)
+#define B2_N16 (1.52587891e-05f)
+#define B2_N15 (3.05175781e-05f)
+#define B2_N14 (6.10351563e-05f)
+#define B2_N13 (1.22070313e-04f)
+#define B2_N12 (2.44140625e-04f)
+#define B2_N11 (4.88281250e-04f)
+#define B2_N10 (9.76562500e-04f)
+#define B2_N9 (1.95312500e-03f)
+#define B2_N8 (3.90625000e-03f)
+#define B2_N7 (7.81250000e-03f)
+#define B2_N6 (1.56250000e-02f)
+#define B2_N5 (3.12500000e-02f)
+#define B2_N4 (6.25000000e-02f)
+#define B2_N3 (1.25000000e-01f)
+#define B2_N2 (2.50000000e-01f)
+#define B2_N1 (5.00000000e-01f)
+
+#define B2_P1 (2)
+#define B2_P2 (4)
+#define B2_P3 (8)
+#define B2_P4 (16)
+#define B2_P5 (32)
+#define B2_P6 (64)
+#define B2_P7 (128)
+#define B2_P8 (256)
+#define B2_P9 (512)
+#define B2_P10 (1024)
+#define B2_P11 (2048)
+#define B2_P12 (4096)
+#define B2_P13 (8192)
+#define B2_P14 (16384)
+#define B2_P15 (32768)
+#define B2_P16 (65536)
+#define B2_P17 (131072)
+#define B2_P18 (262144)
+#define B2_P19 (524288)
+#define B2_P20 (1048576)
+#define B2_P21 (2097152)
+#define B2_P22 (4194304)
+#define B2_P23 (8388608)
+#define B2_P24 (16777216)
+#define B2_P25 (33554432)
+#define B2_P26 (67108864)
+#define B2_P27 (134217728)
+#define B2_P28 (268435456)
+#define B2_P29 (536870912)
+#define B2_P30 (1073741824)
+#define B2_P31 (2147483648)
+#define B2_P32 (4294967296)
+
+#define B10_P1 (1.0E+1) /* B: base, P: positive */
+#define B10_P2 (1.0E+2)
+#define B10_P3 (1.0E+3)
+#define B10_P4 (1.0E+4)
+#define B10_P5 (1.0E+5)
+#define B10_P6 (1.0E+6)
+#define B10_P7 (1.0E+7)
+#define B10_P8 (1.0E+8)
+#define B10_P9 (1.0E+9)
+
+#define B10_N1 (1.0E-1) /* B: base, N: negative */
+#define B10_N2 (1.0E-2)
+#define B10_N3 (1.0E-3)
+#define B10_N4 (1.0E-4)
+#define B10_N5 (1.0E-5)
+#define B10_N6 (1.0E-6)
+#define B10_N7 (1.0E-7)
+#define B10_N8 (1.0E-8)
+#define B10_N9 (1.0E-9)
+
+#define MAX_S16 (32767)
+#define MIN_S16 (-32768)
+
+/* calculate current read position in fifo when ReadPos update */
+#define IDX_READPOS(ReadPos, FifoSize) ((ReadPos) % (FifoSize))
+
+#endif
+
